@@ -1,0 +1,28 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    background-image: url("../img/logo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-img {
+    background-image: url("../img/produk.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+aside {
+    align-content: center;
+    justify-items: center;
+    min-height: 200px;
+}

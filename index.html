@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Mandiri Jaya Abadi</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans">
+
+    <!-- Header -->
+    <header class="main-header p-[8px]">
+        <!-- Logo Icon -->
+        <div class="logo rounded-[50%] h-[50px] w-[50px]">
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <a class="border rounded-[4px] px-[8px] py-[4px]" href="#home">Home</a>
+            <a class="border rounded-[4px] px-[8px] py-[4px]" href="#our-profile">Our Profile</a>
+            <a class="border rounded-[4px] px-[8px] py-[4px]" href="#product">Product</a>
+            <a class="border rounded-[4px] px-[8px] py-[4px]" href="#message-us">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <!-- Main -->
+    <main>
+
+        <!-- Home -->
+        <section class="p-[16px]" id="home">
+            <h1 class="text-[24px] font-bold">Welcome <span id="welcome-speech"></span> to CV Mandiri Jaya Abadi</h1>
+            <p class="text-[16px]">Kami adalah perusahaan terpercaya dalam distribusi dan penjualan barang berkualitas.</p>
+
+            <div class="h-[500px] banner-img"></div>
+        </section>
+
+        <hr />
+
+        <!-- Our Profile -->
+        <section class="p-[16px] min-h-[500px]" id="our-profile">
+            <h1 class="text-[24px] font-bold">Our Profile</h1>
+            <p class="text-[16px]">CV Mandiri Jaya Abadi adalah perusahaan yang bergerak di bidang distribusi barang elektronik dan kebutuhan rumah tangga dengan layanan profesional dan jangkauan luas.</p>
+
+            <div class="mb-4">
+        <h2 class="font-semibold">Tentang Kami</h2>
+        <p>Sejak didirikan pada tahun 2001, CV Mandiri Jaya Abadi adalah perusahaan yang bergerak di bidang distribusi dan penjualan barang kebutuhan rumah tangga, khususnya peralatan dapur. Kami hadir untuk memberikan solusi terbaik bagi konsumen dengan menyediakan produk berkualitas tinggi, pelayanan profesional, dan harga yang kompetitif.</p>
+      </div>
+
+      <div class="mb-4">
+        <h2 class="font-semibold">Visi</h2>
+        <p>Menjadi perusahaan distribusi dan penjualan barang terpercaya dan unggul di Indonesia, dengan layanan yang cepat, profesional, dan berorientasi pada kepuasan pelanggan.</p>
+      </div>
+
+      <div>
+        <h2 class="font-semibold">Misi</h2>
+        <ul class="list-disc pl-5">
+          <li>Menyediakan produk peralatan dapur berkualitas tinggi dengan harga kompetitif.</li>
+          <li>Memberikan layanan pelanggan terbaik melalui tim profesional.</li>
+          <li>Mendukung operasional klien melalui solusi teknis yang efektif dan efisien.</li>
+        </ul>
+      </div>
+    </section>
+
+        <hr />
+
+        <!-- Product -->
+
+        <section class="p-6" id="product">
+        <h2 class="text-2xl font-bold mb-2">Our Product</h2>
+        <div class="flex flex-wrap gap-4">
+            
+            <div class="flex flex-col items-center">
+            <img src="img/wok frypan.jpg" alt="Work Frypan" class="h-[100px] w-[100px] object-cover rounded border" />
+            <p class="mt-2">Work Frypan</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+            <img src="img/bulgogi.jpg" alt="Bulgogi" class="h-[100px] w-[100px] object-cover rounded border" />
+            <p class="mt-2">Bulgogi</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+            <img src="img/Chopper.jpg" alt="Chopper" class="h-[100px] w-[100px] object-cover rounded border" />
+            <p class="mt-2">Chopper</p>
+            </div>
+
+        </div>
+        </section>
+
+
+
+        <hr />
+
+       <!-- Message Us -->
+        <div class="flex flex-col md:flex-row gap-6">
+        <form class="flex-1 space-y-4" id="messageForm" onsubmit="validateForm(event)">
+            <div>
+            <label for="name-input">Name:</label>
+            <input type="text" id="name-input" class="border px-2 py-1 w-full rounded" required />
+            </div>
+            <div>
+            <label for="email-input">Email:</label>
+            <input type="email" id="email-input" class="border px-2 py-1 w-full rounded" required />
+            </div>
+            <div>
+            <label for="phone-input">Phone:</label>
+            <input type="tel" id="phone-input" class="border px-2 py-1 w-full rounded" required />
+            </div>
+            <div>
+            <label for="message-input">Message:</label>
+            <textarea id="message-input" rows="3" class="border px-2 py-1 w-full rounded" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+        </form>
+
+        <!-- Output Hasil -->
+        <aside class="flex-1 bg-blue-100 p-4 rounded shadow space-y-2 min-h-[200px]" id="result-form">
+            <!-- Hasil form akan muncul di sini -->
+        </aside>
+        </div>
+
+    </main>
+
+    <hr />
+
+    <!-- Footer Content -->
+    <footer class="text-center p-[20px] bg-gray-200">
+        <p>&copy; 2025 CV Mandiri Jaya Abadi. All rights reserved.</p>
+    </footer>
+
+    <!-- Javascript External -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
